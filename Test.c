@@ -20,8 +20,13 @@ int main()
             som += i;
         }
     }
-    moy = som/cpt;
+    moy = som / cpt;
     printf("La moyenne est %d\n", moy);
-   
+    if (m % 2 != 0)
+    {
+        cpt++;
+    }
+    printf("le nbre d'entier impairs est %d\n", cpt);
+
     return 0;
 }
